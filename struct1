@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+struct ep
+{
+		char name[35];
+		int age;
+		int num;
+		float salary;
+};
+int main()
+{
+	int i;
+	struct ep emp;
+	for(i=0;i<20;i++)
+	{
+		printf("\n Enter details of person %d: \n",i+1);  
+		printf("Name:");               
+		 scanf("%s",&emp[i].name);
+		printf("Age:"); 				  
+		 scanf("%d",&emp[i].age);
+		printf("Phone Number?");        
+		scanf("%d",&emp[i].num);
+		printf("Salary:"); 			   
+		scanf("%f",&emp[i].salary);
+    }
+    for(i=0;i<20;i++)
+    {
+	    printf(" Name \t\t Age \t\t  Phone Number \t\t Salary );
+	    printf("%d.\t\t %s",i,emp.name);
+	    printf("%d\t\t",emp.age);
+	    printf("%d\t\t",emp.num);
+	    printf("%f\t\t",emp.salary);
+	}
+	    return 0;
+}
+	
